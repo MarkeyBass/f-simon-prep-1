@@ -13,12 +13,24 @@ you write any features. Once the URL responds, deployment risk is dead and you b
 calm. Never leave the first deploy for the end.
 
 ---
+## Set-up session env vars
+
+```bash
+PROJECT_ID=fast-simon-proj-1
+PROJECT_NUM=277249488513
+SA=${PROJECT_NUM}-compute@developer.gserviceaccount.com
+```
 
 ## One-time setup (do this NOW, in practice — not during the test)
 
 ```bash
 gcloud auth login
-gcloud config set project YOUR_PROJECT_ID
+gcloud config set project $PROJECT_ID
+
+gcloud auth application-default set-quota-project $PROJECT_ID
+
+gcloud config set project $PROJECT_ID
+
 gcloud services enable run.googleapis.com cloudbuild.googleapis.com
 ```
 
