@@ -46,6 +46,16 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
   --role="roles/cloudbuild.builds.builder"
 ```
 
+**Setup Firestore (one-time)** — needed only when backing the service with Firestore:
+```bash
+gcloud services enable firestore.googleapis.com
+# DB location is PERMANENT — match your Cloud Run region
+gcloud firestore databases create --location=europe-west1
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member="serviceAccount:${SA}" --role="roles/datastore.user"
+gcloud auth application-default login   # for local runs against Firestore
+```
+
 Pick a region near you — `europe-west1` (your old App Engine apps were europe-west).
 
 ## Deploy (one command, with a Dockerfile present)
@@ -66,12 +76,25 @@ is the safer bet. You get a live `https://...run.app` URL back. Smoke-test it:
 curl https://YOUR-URL.run.app/health
 ```
 
+Then exercise the real endpoints against the live service:
+```bash
+URL=https://fastsimon-practice-277249488513.europe-west1.run.app
+curl -X POST $URL/products -H 'content-type: application/json' --data-binary @sample_catalog.json
+curl $URL/products
+```
+
 ## Run + test locally
 
 ```bash
 pip install -r requirements.txt
-uvicorn main:app --reload --port 8080
-pytest
+pytest                                  # in-memory fake, no creds needed
+uvicorn main:app --reload --port 8080   # serve locally
+```
+
+Smoke-test the local server (in a second shell) — same checks, against Firestore via ADC:
+```bash
+curl -X POST localhost:8080/products -H 'content-type: application/json' --data-binary @sample_catalog.json
+curl localhost:8080/products
 ```
 
 ---
