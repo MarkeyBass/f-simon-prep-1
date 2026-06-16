@@ -16,7 +16,7 @@ Deploy:        gcloud run deploy fastsimon-practice --source . --region europe-w
 
 from __future__ import annotations
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, status
 from pydantic import BaseModel, Field
 
 app = FastAPI(title="Fast Simon Practice — Catalog Service")
@@ -41,6 +41,24 @@ class IngestResponse(BaseModel):
     catalog_size: int
 
 
+class ProductPage(BaseModel):
+    """A page of products with the filters/pagination that produced it."""
+    total: int
+    limit: int
+    offset: int
+    items: list[Product] = Field(default_factory=list)
+
+
+class SimilarProducts(BaseModel):
+    """'Shop similar' result: the source product id and its ranked matches."""
+    of: str
+    items: list[Product] = Field(default_factory=list)
+
+
+class HealthResponse(BaseModel):
+    status: str
+
+
 # ---- "Storage" -----------------------------------------------------------
 # In-memory for the demo. In the assignment, back this with Firestore:
 #   from google.cloud import firestore
@@ -54,12 +72,12 @@ _CATALOG: dict[str, Product] = {}
 # ---- Routes --------------------------------------------------------------
 
 @app.get("/health")
-def health() -> dict[str, str]:
+def health() -> HealthResponse:
     """Liveness check — handy as the stub you deploy first."""
-    return {"status": "ok"}
+    return HealthResponse(status="ok")
 
 
-@app.post("/products", status_code=201)
+@app.post("/products", status_code=status.HTTP_201_CREATED)
 def ingest(req: IngestRequest) -> IngestResponse:
     """Bulk-ingest a catalog. Upserts by id."""
     for p in req.products:
@@ -73,7 +91,7 @@ def list_products(
     max_price: float | None = Query(default=None, ge=0),
     limit: int = Query(default=20, ge=1, le=100),
     offset: int = Query(default=0, ge=0),
-) -> dict:
+) -> ProductPage:
     """List products with filtering + pagination (the 'data flow' part)."""
     items = list(_CATALOG.values())
     if category:
@@ -82,7 +100,7 @@ def list_products(
         items = [p for p in items if p.price <= max_price]
     total = len(items)
     page = items[offset : offset + limit]
-    return {"total": total, "limit": limit, "offset": offset, "items": page}
+    return ProductPage(total=total, limit=limit, offset=offset, items=page)
 
 
 @app.get("/products/{product_id}")
@@ -94,7 +112,7 @@ def get_product(product_id: str) -> Product:
 
 
 @app.get("/products/{product_id}/similar")
-def similar(product_id: str, limit: int = Query(default=5, ge=1, le=50)) -> dict:
+def similar(product_id: str, limit: int = Query(default=5, ge=1, le=50)) -> SimilarProducts:
     """
     Naive 'shop similar': same category, ranked by shared tags.
     In a real system this is vector similarity over embeddings — the
@@ -112,7 +130,7 @@ def similar(product_id: str, limit: int = Query(default=5, ge=1, le=50)) -> dict
         if p.id != product_id and p.category == target.category
     ]
     ranked = sorted(candidates, key=score, reverse=True)[:limit]
-    return {"of": product_id, "items": ranked}
+    return SimilarProducts(of=product_id, items=ranked)
 
 
 # uvicorn main:app --reload --port 8080
