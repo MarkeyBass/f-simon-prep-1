@@ -1,0 +1,14 @@
+AGENTS:
+=========
+
+
+fastapi-pydantic-expert
+------------------------
+
+Use the fastapi-pydantic-expert agent to refactor main.py
+Or it'll auto-trigger when you ask for FastAPI/Pydantic wor
+
+
+
+Use the git-github-expert agent to commit the code and create a PR on GitHub
+before the agents does it - validate the code that everything is correct.
