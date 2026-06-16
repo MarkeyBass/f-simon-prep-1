@@ -36,6 +36,11 @@ class IngestRequest(BaseModel):
     products: list[Product]
 
 
+class IngestResponse(BaseModel):
+    ingested: int
+    catalog_size: int
+
+
 # ---- "Storage" -----------------------------------------------------------
 # In-memory for the demo. In the assignment, back this with Firestore:
 #   from google.cloud import firestore
@@ -55,11 +60,11 @@ def health() -> dict[str, str]:
 
 
 @app.post("/products", status_code=201)
-def ingest(req: IngestRequest) -> dict[str, int]:
+def ingest(req: IngestRequest) -> IngestResponse:
     """Bulk-ingest a catalog. Upserts by id."""
     for p in req.products:
         _CATALOG[p.id] = p
-    return {"ingested": len(req.products), "catalog_size": len(_CATALOG)}
+    return IngestResponse(ingested=len(req.products), catalog_size=len(_CATALOG))
 
 
 @app.get("/products")
@@ -108,3 +113,6 @@ def similar(product_id: str, limit: int = Query(default=5, ge=1, le=50)) -> dict
     ]
     ranked = sorted(candidates, key=score, reverse=True)[:limit]
     return {"of": product_id, "items": ranked}
+
+
+# uvicorn main:app --reload --port 8080

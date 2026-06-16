@@ -1,0 +1,704 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "title": "Black Leather Chelsea Boots",
+      "category": "shoes",
+      "price": 89.99,
+      "tags": ["black", "leather", "boots", "formal", "winter"]
+    },
+    {
+      "id": "prod-002",
+      "title": "Brown Suede Desert Boots",
+      "category": "shoes",
+      "price": 119.0,
+      "tags": ["brown", "suede", "boots", "casual"]
+    },
+    {
+      "id": "prod-003",
+      "title": "Red Wool Scarf",
+      "category": "accessories",
+      "price": 29.5,
+      "tags": ["red", "wool", "winter", "scarf"]
+    },
+    {
+      "id": "prod-004",
+      "title": "White Running Sneakers",
+      "category": "shoes",
+      "price": 74.99,
+      "tags": ["white", "sneakers", "running", "sport"]
+    },
+    {
+      "id": "prod-005",
+      "title": "Navy Blue Blazer",
+      "category": "clothing",
+      "price": 149.0,
+      "tags": ["navy", "blazer", "formal", "office"]
+    },
+    {
+      "id": "prod-006",
+      "title": "Gray Cotton T-Shirt",
+      "category": "clothing",
+      "price": 19.99,
+      "tags": ["gray", "cotton", "casual", "basics"]
+    },
+    {
+      "id": "prod-007",
+      "title": "Black Leather Belt",
+      "category": "accessories",
+      "price": 34.99,
+      "tags": ["black", "leather", "belt", "formal"]
+    },
+    {
+      "id": "prod-008",
+      "title": "Tan Leather Crossbody Bag",
+      "category": "bags",
+      "price": 89.0,
+      "tags": ["tan", "leather", "crossbody", "casual"]
+    },
+    {
+      "id": "prod-009",
+      "title": "Green Parka Jacket",
+      "category": "clothing",
+      "price": 199.99,
+      "tags": ["green", "parka", "winter", "waterproof"]
+    },
+    {
+      "id": "prod-010",
+      "title": "Silver Aviator Sunglasses",
+      "category": "accessories",
+      "price": 59.0,
+      "tags": ["silver", "sunglasses", "summer", "unisex"]
+    },
+    {
+      "id": "prod-011",
+      "title": "Black Ankle Boots",
+      "category": "shoes",
+      "price": 95.0,
+      "tags": ["black", "leather", "boots", "ankle"]
+    },
+    {
+      "id": "prod-012",
+      "title": "Beige Canvas Sneakers",
+      "category": "shoes",
+      "price": 49.99,
+      "tags": ["beige", "canvas", "sneakers", "casual"]
+    },
+    {
+      "id": "prod-013",
+      "title": "Blue Denim Jeans",
+      "category": "clothing",
+      "price": 69.99,
+      "tags": ["blue", "denim", "jeans", "casual"]
+    },
+    {
+      "id": "prod-014",
+      "title": "Black Slim Fit Chinos",
+      "category": "clothing",
+      "price": 54.0,
+      "tags": ["black", "chinos", "office", "slim-fit"]
+    },
+    {
+      "id": "prod-015",
+      "title": "Cognac Leather Oxford Shoes",
+      "category": "shoes",
+      "price": 139.99,
+      "tags": ["brown", "leather", "oxford", "formal"]
+    },
+    {
+      "id": "prod-016",
+      "title": "Charcoal Wool Overcoat",
+      "category": "clothing",
+      "price": 249.0,
+      "tags": ["gray", "wool", "overcoat", "winter", "formal"]
+    },
+    {
+      "id": "prod-017",
+      "title": "Pink Silk Scarf",
+      "category": "accessories",
+      "price": 45.0,
+      "tags": ["pink", "silk", "scarf", "formal"]
+    },
+    {
+      "id": "prod-018",
+      "title": "Black Leather Backpack",
+      "category": "bags",
+      "price": 129.99,
+      "tags": ["black", "leather", "backpack", "travel"]
+    },
+    {
+      "id": "prod-019",
+      "title": "White Linen Shirt",
+      "category": "clothing",
+      "price": 44.99,
+      "tags": ["white", "linen", "summer", "casual"]
+    },
+    {
+      "id": "prod-020",
+      "title": "Red High-Top Sneakers",
+      "category": "shoes",
+      "price": 84.0,
+      "tags": ["red", "sneakers", "streetwear", "sport"]
+    },
+    {
+      "id": "prod-021",
+      "title": "Gold Hoop Earrings",
+      "category": "accessories",
+      "price": 39.99,
+      "tags": ["gold", "jewelry", "earrings", "formal"]
+    },
+    {
+      "id": "prod-022",
+      "title": "Olive Green Cargo Pants",
+      "category": "clothing",
+      "price": 59.0,
+      "tags": ["green", "cargo", "casual", "outdoor"]
+    },
+    {
+      "id": "prod-023",
+      "title": "Black Patent Leather Pumps",
+      "category": "shoes",
+      "price": 109.99,
+      "tags": ["black", "leather", "heels", "formal"]
+    },
+    {
+      "id": "prod-024",
+      "title": "Striped Breton Top",
+      "category": "clothing",
+      "price": 32.0,
+      "tags": ["striped", "cotton", "casual", "summer"]
+    },
+    {
+      "id": "prod-025",
+      "title": "Brown Leather Tote Bag",
+      "category": "bags",
+      "price": 159.0,
+      "tags": ["brown", "leather", "tote", "office"]
+    },
+    {
+      "id": "prod-026",
+      "title": "Black Wool Beanie",
+      "category": "accessories",
+      "price": 18.99,
+      "tags": ["black", "wool", "winter", "beanie"]
+    },
+    {
+      "id": "prod-027",
+      "title": "Blue Suede Loafers",
+      "category": "shoes",
+      "price": 99.0,
+      "tags": ["blue", "suede", "loafers", "casual"]
+    },
+    {
+      "id": "prod-028",
+      "title": "White Crew Socks 3-Pack",
+      "category": "accessories",
+      "price": 12.99,
+      "tags": ["white", "cotton", "socks", "basics"]
+    },
+    {
+      "id": "prod-029",
+      "title": "Black Puffer Vest",
+      "category": "clothing",
+      "price": 79.99,
+      "tags": ["black", "puffer", "winter", "outdoor"]
+    },
+    {
+      "id": "prod-030",
+      "title": "Tan Suede Ankle Boots",
+      "category": "shoes",
+      "price": 125.0,
+      "tags": ["tan", "suede", "boots", "ankle", "casual"]
+    },
+    {
+      "id": "prod-031",
+      "title": "Navy Striped Tie",
+      "category": "accessories",
+      "price": 27.5,
+      "tags": ["navy", "silk", "tie", "formal"]
+    },
+    {
+      "id": "prod-032",
+      "title": "Gray Merino Sweater",
+      "category": "clothing",
+      "price": 89.0,
+      "tags": ["gray", "wool", "sweater", "winter"]
+    },
+    {
+      "id": "prod-033",
+      "title": "Black Gym Duffel Bag",
+      "category": "bags",
+      "price": 49.99,
+      "tags": ["black", "duffel", "sport", "travel"]
+    },
+    {
+      "id": "prod-034",
+      "title": "White Leather Sneakers",
+      "category": "shoes",
+      "price": 110.0,
+      "tags": ["white", "leather", "sneakers", "minimal"]
+    },
+    {
+      "id": "prod-035",
+      "title": "Burgundy Velvet Blazer",
+      "category": "clothing",
+      "price": 179.99,
+      "tags": ["burgundy", "velvet", "blazer", "formal"]
+    },
+    {
+      "id": "prod-036",
+      "title": "Black Leather Gloves",
+      "category": "accessories",
+      "price": 42.0,
+      "tags": ["black", "leather", "gloves", "winter"]
+    },
+    {
+      "id": "prod-037",
+      "title": "Khaki Chino Shorts",
+      "category": "clothing",
+      "price": 38.99,
+      "tags": ["khaki", "chinos", "shorts", "summer"]
+    },
+    {
+      "id": "prod-038",
+      "title": "Gray Trail Running Shoes",
+      "category": "shoes",
+      "price": 129.99,
+      "tags": ["gray", "running", "trail", "outdoor", "sport"]
+    },
+    {
+      "id": "prod-039",
+      "title": "Camel Wool Scarf",
+      "category": "accessories",
+      "price": 35.0,
+      "tags": ["camel", "wool", "scarf", "winter"]
+    },
+    {
+      "id": "prod-040",
+      "title": "Black Mini Clutch",
+      "category": "bags",
+      "price": 65.0,
+      "tags": ["black", "clutch", "evening", "formal"]
+    },
+    {
+      "id": "prod-041",
+      "title": "Indigo Raw Denim Jacket",
+      "category": "clothing",
+      "price": 119.99,
+      "tags": ["blue", "denim", "jacket", "casual"]
+    },
+    {
+      "id": "prod-042",
+      "title": "Brown Brogue Derby Shoes",
+      "category": "shoes",
+      "price": 145.0,
+      "tags": ["brown", "leather", "brogue", "formal"]
+    },
+    {
+      "id": "prod-043",
+      "title": "White Pearl Stud Earrings",
+      "category": "accessories",
+      "price": 55.99,
+      "tags": ["white", "pearl", "jewelry", "formal"]
+    },
+    {
+      "id": "prod-044",
+      "title": "Forest Green Hoodie",
+      "category": "clothing",
+      "price": 49.0,
+      "tags": ["green", "hoodie", "cotton", "casual"]
+    },
+    {
+      "id": "prod-045",
+      "title": "Black Platform Sandals",
+      "category": "shoes",
+      "price": 59.99,
+      "tags": ["black", "sandals", "summer", "casual"]
+    },
+    {
+      "id": "prod-046",
+      "title": "Navy Canvas Weekender",
+      "category": "bags",
+      "price": 89.99,
+      "tags": ["navy", "canvas", "weekender", "travel"]
+    },
+    {
+      "id": "prod-047",
+      "title": "Yellow Rain Jacket",
+      "category": "clothing",
+      "price": 69.0,
+      "tags": ["yellow", "rain", "waterproof", "outdoor"]
+    },
+    {
+      "id": "prod-048",
+      "title": "Black Leather Chelsea Boots Women",
+      "category": "shoes",
+      "price": 99.99,
+      "tags": ["black", "leather", "boots", "chelsea"]
+    },
+    {
+      "id": "prod-049",
+      "title": "Rose Gold Watch",
+      "category": "accessories",
+      "price": 189.0,
+      "tags": ["rose-gold", "watch", "jewelry", "formal"]
+    },
+    {
+      "id": "prod-050",
+      "title": "White Poplin Dress Shirt",
+      "category": "clothing",
+      "price": 59.99,
+      "tags": ["white", "poplin", "office", "formal"]
+    },
+    {
+      "id": "prod-051",
+      "title": "Gray Wool Blazer",
+      "category": "clothing",
+      "price": 169.0,
+      "tags": ["gray", "wool", "blazer", "office"]
+    },
+    {
+      "id": "prod-052",
+      "title": "Brown Leather Hiking Boots",
+      "category": "shoes",
+      "price": 159.99,
+      "tags": ["brown", "leather", "boots", "hiking", "outdoor"]
+    },
+    {
+      "id": "prod-053",
+      "title": "Black Leather Wallet",
+      "category": "accessories",
+      "price": 44.0,
+      "tags": ["black", "leather", "wallet", "basics"]
+    },
+    {
+      "id": "prod-054",
+      "title": "Red Flannel Shirt",
+      "category": "clothing",
+      "price": 42.99,
+      "tags": ["red", "flannel", "casual", "winter"]
+    },
+    {
+      "id": "prod-055",
+      "title": "Black Satin Evening Dress",
+      "category": "clothing",
+      "price": 229.0,
+      "tags": ["black", "satin", "evening", "formal"]
+    },
+    {
+      "id": "prod-056",
+      "title": "White Tennis Shoes",
+      "category": "shoes",
+      "price": 64.99,
+      "tags": ["white", "tennis", "sport", "casual"]
+    },
+    {
+      "id": "prod-057",
+      "title": "Teal Silk Pocket Square",
+      "category": "accessories",
+      "price": 22.0,
+      "tags": ["teal", "silk", "formal", "pocket-square"]
+    },
+    {
+      "id": "prod-058",
+      "title": "Olive Utility Jacket",
+      "category": "clothing",
+      "price": 99.0,
+      "tags": ["olive", "utility", "jacket", "outdoor"]
+    },
+    {
+      "id": "prod-059",
+      "title": "Black Leather Moto Jacket",
+      "category": "clothing",
+      "price": 279.99,
+      "tags": ["black", "leather", "jacket", "streetwear"]
+    },
+    {
+      "id": "prod-060",
+      "title": "Sand Espadrille Flats",
+      "category": "shoes",
+      "price": 39.99,
+      "tags": ["sand", "espadrille", "summer", "casual"]
+    },
+    {
+      "id": "prod-061",
+      "title": "Gray Laptop Sleeve",
+      "category": "bags",
+      "price": 29.0,
+      "tags": ["gray", "laptop", "office", "basics"]
+    },
+    {
+      "id": "prod-062",
+      "title": "Navy Peacoat",
+      "category": "clothing",
+      "price": 219.0,
+      "tags": ["navy", "wool", "peacoat", "winter", "formal"]
+    },
+    {
+      "id": "prod-063",
+      "title": "Brown Leather Sandals",
+      "category": "shoes",
+      "price": 54.99,
+      "tags": ["brown", "leather", "sandals", "summer"]
+    },
+    {
+      "id": "prod-064",
+      "title": "Black Cashmere Beanie",
+      "category": "accessories",
+      "price": 48.0,
+      "tags": ["black", "cashmere", "beanie", "winter"]
+    },
+    {
+      "id": "prod-065",
+      "title": "Light Blue Oxford Shirt",
+      "category": "clothing",
+      "price": 52.99,
+      "tags": ["blue", "oxford", "office", "casual"]
+    },
+    {
+      "id": "prod-066",
+      "title": "Black Running Shorts",
+      "category": "clothing",
+      "price": 34.0,
+      "tags": ["black", "shorts", "running", "sport"]
+    },
+    {
+      "id": "prod-067",
+      "title": "White Leather Loafers",
+      "category": "shoes",
+      "price": 115.0,
+      "tags": ["white", "leather", "loafers", "summer"]
+    },
+    {
+      "id": "prod-068",
+      "title": "Maroon Knit Cardigan",
+      "category": "clothing",
+      "price": 74.99,
+      "tags": ["maroon", "knit", "cardigan", "winter"]
+    },
+    {
+      "id": "prod-069",
+      "title": "Black Structured Satchel",
+      "category": "bags",
+      "price": 139.0,
+      "tags": ["black", "leather", "satchel", "office"]
+    },
+    {
+      "id": "prod-070",
+      "title": "Copper Cuff Bracelet",
+      "category": "accessories",
+      "price": 36.99,
+      "tags": ["copper", "jewelry", "bracelet", "casual"]
+    },
+    {
+      "id": "prod-071",
+      "title": "Charcoal Slim Jeans",
+      "category": "clothing",
+      "price": 79.0,
+      "tags": ["gray", "denim", "jeans", "slim-fit"]
+    },
+    {
+      "id": "prod-072",
+      "title": "Green Suede Sneakers",
+      "category": "shoes",
+      "price": 92.99,
+      "tags": ["green", "suede", "sneakers", "streetwear"]
+    },
+    {
+      "id": "prod-073",
+      "title": "Black Silk Bow Tie",
+      "category": "accessories",
+      "price": 24.99,
+      "tags": ["black", "silk", "bow-tie", "formal"]
+    },
+    {
+      "id": "prod-074",
+      "title": "Cream Cable Knit Sweater",
+      "category": "clothing",
+      "price": 84.0,
+      "tags": ["cream", "knit", "sweater", "winter"]
+    },
+    {
+      "id": "prod-075",
+      "title": "Black Leather Combat Boots",
+      "category": "shoes",
+      "price": 149.99,
+      "tags": ["black", "leather", "boots", "combat", "streetwear"]
+    },
+    {
+      "id": "prod-076",
+      "title": "Tan Bucket Hat",
+      "category": "accessories",
+      "price": 21.0,
+      "tags": ["tan", "hat", "summer", "casual"]
+    },
+    {
+      "id": "prod-077",
+      "title": "Navy Swim Trunks",
+      "category": "clothing",
+      "price": 29.99,
+      "tags": ["navy", "swim", "summer", "sport"]
+    },
+    {
+      "id": "prod-078",
+      "title": "Brown Leather Weekender Bag",
+      "category": "bags",
+      "price": 199.0,
+      "tags": ["brown", "leather", "weekender", "travel"]
+    },
+    {
+      "id": "prod-079",
+      "title": "White Platform Sneakers",
+      "category": "shoes",
+      "price": 88.0,
+      "tags": ["white", "platform", "sneakers", "streetwear"]
+    },
+    {
+      "id": "prod-080",
+      "title": "Black Turtleneck",
+      "category": "clothing",
+      "price": 46.99,
+      "tags": ["black", "turtleneck", "wool", "winter"]
+    },
+    {
+      "id": "prod-081",
+      "title": "Silver Chain Necklace",
+      "category": "accessories",
+      "price": 62.0,
+      "tags": ["silver", "jewelry", "necklace", "casual"]
+    },
+    {
+      "id": "prod-082",
+      "title": "Blue Performance Leggings",
+      "category": "clothing",
+      "price": 39.0,
+      "tags": ["blue", "leggings", "sport", "basics"]
+    },
+    {
+      "id": "prod-083",
+      "title": "Black Patent Pumps",
+      "category": "shoes",
+      "price": 104.99,
+      "tags": ["black", "patent", "heels", "formal"]
+    },
+    {
+      "id": "prod-084",
+      "title": "Rust Corduroy Trousers",
+      "category": "clothing",
+      "price": 67.99,
+      "tags": ["rust", "corduroy", "trousers", "winter"]
+    },
+    {
+      "id": "prod-085",
+      "title": "Black RFID Passport Holder",
+      "category": "accessories",
+      "price": 19.99,
+      "tags": ["black", "leather", "travel", "basics"]
+    },
+    {
+      "id": "prod-086",
+      "title": "Gray Wool Peacoat",
+      "category": "clothing",
+      "price": 235.0,
+      "tags": ["gray", "wool", "peacoat", "winter", "formal"]
+    },
+    {
+      "id": "prod-087",
+      "title": "Brown Suede Chelsea Boots",
+      "category": "shoes",
+      "price": 132.0,
+      "tags": ["brown", "suede", "boots", "chelsea"]
+    },
+    {
+      "id": "prod-088",
+      "title": "Red Canvas Tote",
+      "category": "bags",
+      "price": 24.99,
+      "tags": ["red", "canvas", "tote", "casual"]
+    },
+    {
+      "id": "prod-089",
+      "title": "Black Yoga Mat Bag",
+      "category": "bags",
+      "price": 31.0,
+      "tags": ["black", "sport", "yoga", "basics"]
+    },
+    {
+      "id": "prod-090",
+      "title": "Ivory Lace Blouse",
+      "category": "clothing",
+      "price": 58.99,
+      "tags": ["ivory", "lace", "blouse", "formal"]
+    },
+    {
+      "id": "prod-091",
+      "title": "Black Leather Driving Moccasins",
+      "category": "shoes",
+      "price": 98.0,
+      "tags": ["black", "leather", "moccasins", "casual"]
+    },
+    {
+      "id": "prod-092",
+      "title": "Plaid Wool Scarf",
+      "category": "accessories",
+      "price": 33.99,
+      "tags": ["plaid", "wool", "scarf", "winter"]
+    },
+    {
+      "id": "prod-093",
+      "title": "Dark Wash Bootcut Jeans",
+      "category": "clothing",
+      "price": 72.0,
+      "tags": ["blue", "denim", "jeans", "bootcut"]
+    },
+    {
+      "id": "prod-094",
+      "title": "Black Insulated Winter Boots",
+      "category": "shoes",
+      "price": 174.99,
+      "tags": ["black", "boots", "winter", "outdoor", "waterproof"]
+    },
+    {
+      "id": "prod-095",
+      "title": "Gold Thin Bangle Set",
+      "category": "accessories",
+      "price": 47.0,
+      "tags": ["gold", "jewelry", "bangle", "formal"]
+    },
+    {
+      "id": "prod-096",
+      "title": "Sage Green Linen Pants",
+      "category": "clothing",
+      "price": 61.99,
+      "tags": ["green", "linen", "pants", "summer"]
+    },
+    {
+      "id": "prod-097",
+      "title": "Black Mesh Running Shoes",
+      "category": "shoes",
+      "price": 118.0,
+      "tags": ["black", "mesh", "running", "sport"]
+    },
+    {
+      "id": "prod-098",
+      "title": "Navy Leather Belt",
+      "category": "accessories",
+      "price": 37.99,
+      "tags": ["navy", "leather", "belt", "office"]
+    },
+    {
+      "id": "prod-099",
+      "title": "Camel Wool Coat",
+      "category": "clothing",
+      "price": 265.0,
+      "tags": ["camel", "wool", "coat", "winter", "formal"]
+    },
+    {
+      "id": "prod-100",
+      "title": "Black Leather Briefcase",
+      "category": "bags",
+      "price": 219.99,
+      "tags": ["black", "leather", "briefcase", "office", "formal"]
+    }
+  ]
+}
