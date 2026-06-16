@@ -13,7 +13,7 @@ you write any features. Once the URL responds, deployment risk is dead and you b
 calm. Never leave the first deploy for the end.
 
 ---
-## Set-up session env vars
+## Set-up session env vars for the project info and for adding IAM Policies to Project** — roles/cloudbuild.builds.builder:
 
 ```bash
 PROJECT_ID=fast-simon-proj-1
@@ -65,6 +65,11 @@ gcloud run deploy fastsimon-practice \
   --source . \
   --region europe-west1 \
   --allow-unauthenticated
+```
+
+## The url returned:
+```bash
+https://fastsimon-practice-277249488513.europe-west1.run.app
 ```
 
 `--source .` hands the folder to Cloud Build. With a Dockerfile present it builds that
