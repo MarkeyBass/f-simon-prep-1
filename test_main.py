@@ -1,19 +1,28 @@
 """
 Tests for the catalog service. Having even a handful of these is a big part
 of what 'the code needs to be good' means. Run with: pytest
+
+The Firestore dependency is overridden with an in-memory repository, so these
+run anywhere with no credentials and no network.
 """
 
 from fastapi.testclient import TestClient
 
-import main
 from main import app
+from repository import InMemoryProductRepository, get_repository
+
+# A single fake repo instance, reset per test in setup_function. The override
+# returns this same instance so multiple requests in one test share state.
+_repo = InMemoryProductRepository()
+app.dependency_overrides[get_repository] = lambda: _repo
 
 client = TestClient(app)
 
 
 def setup_function() -> None:
-    # Clean state between tests — the in-memory store is module-level.
-    main._CATALOG.clear()
+    # Fresh, empty store between tests.
+    global _repo
+    _repo = InMemoryProductRepository()
 
 
 SAMPLE = {
